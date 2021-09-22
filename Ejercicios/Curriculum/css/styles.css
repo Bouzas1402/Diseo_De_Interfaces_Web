@@ -11494,3 +11494,27 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+/* 
+* Aqui van los colores de fondo de las ventanas emergentes:
+*/ 
+
+.ventana1{
+  background-color:rgba(245, 186, 98);
+}
+
+.ventana2{
+  background-color:rgba(168, 238, 223);
+}
+
+.ventana3 {
+  background-color:rgba(137, 240, 146);
+}
+
+.ventana4{
+  background-color: rgba(238, 231, 138);
+}
+
+.ventana5{
+  background-color: rgb(197, 178, 248);
+}
