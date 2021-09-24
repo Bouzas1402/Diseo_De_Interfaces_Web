@@ -10,64 +10,98 @@
         .verde {
             background-color: chartreuse;
 
+
         }
         .rojo {
             background-color: red;
+            height: 60px;
         }
         .azul {
             background-color: #0a53be;
         }
         .rosa {
             background-color: magenta;
+            height: 50px;
         }
         .salmon {
             background-color: sandybrown;
+        }
+        @media (min-width: 768px) {
+            .rojo {
+                height: 470px;
+            }
+
+        }
+
+
+        @media (min-width: 576px) {
+            .salmon {
+
+                height: 175px;
+            }
         }
 
 
     </style>
 </head>
 <body>
-<div class="container" style="height: 600px">
-    <div class="row mb-2" style="height: 100px">
+<div class="container mb-2" style="height: 100px">
+    <div class="row h-100">
         <div class="col-12 verde border border-dark">
         </div>
     </div>
-
-    <div class="row" style="height: 450px">
+</div>
+<div class="container prueba">
+    <div class="row h-100">
         <div class="col-md-2 col-12 rojo border border-dark"></div>
         <div class="col-md-10 col-12">
-            <div class="row m-1 rosa" style="height: 50px">
+            <div class="row mx-1 rosa ">
                 <div class="col-12 border border-dark">
                 </div>
             </div>
-            <div class="row m-0" style="height: 175px">
-                <div class="col-md-5 col-12 salmon border border-dark"></div>
-                <div class="col-md-5 col-12 salmon border border-dark"></div>
+            <div class="row m-1" style="height: 175px">
+                <div class="col-md col-xs-12 salmon border border-dark  me-md-1 mt-1"></div>
+                <div class="col-md col-xs-12 salmon border border-dark ms-md-1 mt-1"></div>
             </div>
+
             <div class="row m-1" style="height: 110px">
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-            </div>
-            <div class="row m-1" style="height: 110px">
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
-                <div class="col azul border border-dark m-1"></div>
+                <div class="col azul border border-dark m-1 h-100"></div>
+                <div class="col  azul border border-dark m-1 h-100"></div>
+                <div class="w-100 d-block d-sm-none"></div>
+                <div class="col  azul border border-dark m-1 h-100"></div>
+                <div class="w-100 d-none d-md-none d-sm-block"></div>
+                <div class="col  azul border border-dark m-1 h-100"></div>
+                <div class="w-100 d-block d-sm-none"></div>
+                <div class="col  azul border border-dark m-1 h-100"></div>
+            <div class="w-100 d-none d-md-block"></div>
+                <div class="col  azul border border-dark m-1 h-100"></div>
+                <div class="w-100 d-none d-block d-sm-none"></div>
+                <div class="w-100 d-md-none d-sm-block"></div>
+                <div class="col azul border border-dark m-1 h-100"></div>
+                <div class="col azul border border-dark m-1 h-100"></div>
+                <div class="w-100 d-block d-sm-none"></div>
+                <div class="col  azul border border-dark m-1 h-100"></div>
+                <div class="w-100 d-none d-md-none d-sm-block"></div>
+                <div class="col azul border border-dark m-1 h-100"></div>
+                <div class="col d-none d-sm-block d-md-none  m-1 h-100"></div>
+                <div class="col d-none d-sm-block d-md-none  m-1 h-100"></div>
+                <div class="flex d-block d-md-none px-0 mt-2">
+                    <div class="col-12 me-2 verde border border-dark" style="height: 25px; width: 540px"></div>
+                </div>
             </div>
 
 
         </div>
 
     </div>
-    <div class="row mt-4">
+
+</div>
+<div class="container d-none d-md-block">
+    <div class="row mt-3 ">
         <div class="col-12 verde border border-dark" style="height: 25px"></div>
     </div>
 </div>
+
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
