@@ -1,0 +1,32 @@
+version: '3'
+services:
+    php:
+        build:
+            context: .
+            dockerfile: docker/php/Dockerfile
+            args:
+                TIMEZONE: ${TIMEZONE}
+        volumes:
+            - ./site/:/var/www/${PROJECT}/
+        networks:
+            - dwec2daw
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/nginx/Dockerfile
+        volumes:
+            - ./site/:/var/www/${PROJECT}/
+        ports:
+            - 8001:80
+        networks:
+            - dwec2daw
+
+volumes:
+    db5_app:
+
+networks:
+    dwec2daw:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 172.200.0.0/16
