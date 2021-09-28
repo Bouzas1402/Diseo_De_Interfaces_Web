@@ -4,13 +4,15 @@
 ## Pagina 1:
 
 # URL:
-```
 https://www.lancemanion.com/holocene/
+```
+
 ```
 
 ## Pagina 2:
 
-# URL:
+# URL: 
+http://theacolytesofsatan.org/
 ```
 
 ```
@@ -18,6 +20,8 @@ https://www.lancemanion.com/holocene/
 ## Pagina 3:
 
 # URL:
+http://corndog.io/
+
 ```
 
 ```
@@ -25,6 +29,7 @@ https://www.lancemanion.com/holocene/
 ## Pagina 4:
 
 # URL:
+http://www.staggeringbeauty.com/
 ```
 
 ```
@@ -32,6 +37,7 @@ https://www.lancemanion.com/holocene/
 ## Pagina 5:
 
 # URL:
+
 ```
 
 ```
@@ -39,6 +45,8 @@ https://www.lancemanion.com/holocene/
 ## Pagina 6:
 
 # URL:
+https://heeeeeeeey.com/
+https://hooooooooo.com/
 ```
 
 ```
@@ -46,6 +54,7 @@ https://www.lancemanion.com/holocene/
 ## Pagina 7:
 
 # URL:
+http://endless.horse/
 ```
 
 ```
@@ -53,6 +62,7 @@ https://www.lancemanion.com/holocene/
 ## Pagina 8:
 
 # URL:
+https://puginarug.com/
 ```
 
 ```
@@ -77,6 +87,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 1:
 
 # URL:
+https://www.youtube.com/watch?v=HbhVkDdTF5I
 ```
 
 ```
@@ -84,6 +95,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 2:
 
 # URL:
+https://mondrianandme.com/
 ```
 
 ```
@@ -91,6 +103,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 3:
 
 # URL:
+https://longdogechallenge.com/
 ```
 
 ```
@@ -98,6 +111,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 4:
 
 # URL:
+https://e.ggtimer.com/
 ```
 
 ```
@@ -105,6 +119,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 5:
 
 # URL:
+https://www.bannereasy.com/?ref=discuvver
 ```
 
 ```
@@ -112,6 +127,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 6:
 
 # URL:
+https://alwaysjudgeabookbyitscover.com/
 ```
 
 ```
@@ -119,6 +135,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 7:
 
 # URL:
+https://tineye.com/?ref=discuvver
 ```
 
 ```
@@ -126,6 +143,7 @@ https://www.lancemanion.com/holocene/
 # Pagina 8:
 
 # URL:
+https://howlongtoread.com/?ref=discuvver
 ```
 
 ```
