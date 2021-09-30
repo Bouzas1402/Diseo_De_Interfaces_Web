@@ -11,9 +11,10 @@
 
 ### Nota : 5
 
-- No me gusta la fuente de letra.
-- Parece muy antiguo.
-- No conozco al autor sobre el que va la pagina.
+- No conozco al autor.
+- No me gusta la fuente de letra, es pequeña y el texto tiene una tipografia con serifa cosa que no se recomienda.
+- Tiene un gran contraste entre el fondo y el elemento que quiere resaltar que son los articulos del blog.
+- Hay buena separación de elementos bien agrupados entre sí, los que tienen una semejanza entre ellos estan juntos.
 
 ## - Pagina 2:
 #### URL: [Guia Satanica](http://theacolytesofsatan.org/)
@@ -25,11 +26,13 @@
 - Tiene una tematica que no me interesa.
 - No le encuentro ninguna funcionalidad a la pagina, parece solo un 
   panfleto.
+- La disposicion no sigue ninguna regla, todos los elementos estan a la izquierda.
+- La caligrafia y el contraste entre negro y blanco del fondo y el texto le restan legibilidad.
 
 ## - Pagina 3:
 #### URL: [Salchicas](http://corndog.io/)
 ![fondopalitos](./img/mal3.PNG)
-- Fondo con salchichas en palo en movimiento-
+- Fondo con salchichas en palo en movimiento
 
 ### Nota : 2
 
@@ -51,10 +54,10 @@
 ![hoo](./img/mal5-2.PNG)
 - Dos paginas que se van intercalando en un periodo corto de tiempo, en una pone HEEEEY! en negro con fondo blanco y otra pone HOOOOO! en blanco con fondo negro.
 
-### Nota : 1
+### Nota : 2
 
 - Pagina aburrida.
-- No tiene ningun uso
+- No tiene ningun uso.
 
 
 ## - Pagina 6:
@@ -78,6 +81,44 @@
 - No tiene ningun uso
 - Me marea.
 
+
+## - Pagina 8:
+#### URL: [Serpiente](http://www.staggeringbeauty.com/)
+![Serpiente](./img/mal8.PNG)
+- Es un churro negro que sigue el puntero por la pantalla.
+
+### Nota : 4
+
+- Funciona bien pero es tan simple que hace que aburra en seguida.
+- Tiene buena eleccion de colores de fondo.
+- El contraste de la serpiente y su movimiento hace que resalto el elemento principal de la pagina.
+
+
+
+## - Pagina 9:
+#### URL: [Alargar perro](https://longdogechallenge.com/)
+![perrolargo](./img/mal9.PNG)
+- Pagina que alarga el perro indefinidamente y cuenta cuanto lo as alargado haciendo scroll hacia abajo en la pagina.
+
+### Nota : 4
+
+- Funciona bien pero es tan simple que hace que aburra en seguida.
+- Solo sirve para alargar al perro y llegar al maximo posible, lo que la hace muy aburrida al poco.
+- Buena disposición de los elementos de la pagina.
+- Tiene un estilo (retro) bien implantado.
+
+## - Pagina 10:
+#### URL: [Manuales](http://www.retrevo.com/?ref=discuvver)
+![Manuales](./img/mal10.PNG)
+- Pagina con manuales de uso de distintas marcas y productos.
+
+### Nota : 4
+
+- Tiene buena eleccion de colores, es agradable de ver la caligrafia es clara.
+- Los elementos estan bien espaciados y agrupados entre sí y los ue forman grupo siguen una direccion y un patron comun.
+- No me gusta porque en una rapida prueba comprobe que en realidad no tiene ningun manual por lo que la pagina no sirve de mucho.
+- Buena idea, y util, una buena pagina web, pero no sirve para lo que dice que sirve.
+
 ___
 
 ## **Paginas que me gustan:**
@@ -92,6 +133,9 @@ ___
 - Pagina muy conocida.
 - Facil navegacion.
 - Es una pagina que uso muchisimo.
+- Eleccion de colores que hace la composicion agradable.
+- Caligrafia clara.
+- Los elementos estan agrupados por semejanza y proximidad y ademas siguen una dirección.
 
 ## - Pagina 2:
 #### URL: [Mondrian](https://mondrianandme.com/)
@@ -100,18 +144,20 @@ ___
 
 ### Nota : 7
  
-- Pagina didactica.
+- Pagina didactica y divulgativa.
 - Muy original.
 
 ## - Pagina 3:
-#### URL: [Alargar perro](https://longdogechallenge.com/)
-![perrolargo](./img/bien3.PNG)
-- Pagina que alarga el perro indefinidamente y cuenta cuanto lo as alargado haciendo scroll hacia abajo en la pagina.
+#### URL: [Enviar fax](https://faxzero.com/)
+![Enviar Fax](./img/bien3.PNG)
+- Es una página que ofrece enviar faxes gratis, tambien tiene una opción de pago.
 
-### Nota : 5
- 
-- Me resulta gracioso la funcionalidad de la pagina por eso me gusta.
-- Solo sirve para alargar al perro y llegar al maximo posible, lo que la hace muy aburrida al poco.
+### Nota : 7
+
+- Los colores tienen armonia de colores claros.
+- Tiene un equilibrio simetrico.
+- Los elementos tienen una direccion común y estan bien agrupados.
+- Los anuncios son invasivos. 
 
 ## - Pagina 4:
 #### URL: [Cronometro huevo](https://e.ggtimer.com/)
@@ -121,6 +167,7 @@ ___
 ### Nota : 6
 
 - Me resulta agradable los colores y la disposición de la pagina.
+- Caligrafia clara.  
 - Funciona bien, aunque puede que no tenga mucho sentido tener usar un cronometro en una pagina web
 
 ## - Pagina 5:
@@ -132,6 +179,9 @@ ___
 
 - La pagina es clara con lo que ofrece y sencilla.
 - Facil navegacion por la pagina.
+- Buena disposición de elementos agrupados por tamaños con una direccion común.
+- Hay un contrasta de colores que hace que resalte lo que ofrece la pagina.
+- Tiene un buen espaciado.
 
 ## - Pagina 6:
 #### URL: [Libros raros](https://alwaysjudgeabookbyitscover.com/)
@@ -143,6 +193,9 @@ ___
 
 - Me gusta mucho la tematica de la pagina y que haya enlaces para comprar los libros de los que habla.
 - Me gusta los colores de la pagina.
+- Tiene un composicion simetrica.
+- Estan bien agrupados los elementos por cercania, el espaciado.
+- Hay una repeticion de elementos que crean un ritmo visualmente atractivo.
 
 
 ## - Pagina 7:
@@ -153,5 +206,41 @@ ___
 
 ### Nota : 7
 
-- Me gust mucho la tematica de la pagina.
+- Me gusta mucho la tematica de la pagina.
 - Por lo que he podido ver tiene una gran base de datos de libros.
+- Los colores tienen armonía.
+- Los elementos tienen simetria.
+- Caligrafía clara.
+
+## - Pagina 8:
+#### URL: [Trafico aereo](https://www.flightradar24.com/32.88,-11.34/5)
+![Trafico Aereo](./img/bien8.PNG)
+- Pagina para seguir en pagina aereo.
+
+### Nota : 9
+
+- Buena disposición de alementos.
+- Los elementos secundarios no resaltan, tienen facil manejo y son muy claros.
+
+
+## - Pagina 9:
+#### URL: [Editor de PDF](https://www.pdfescape.com/windows/)
+![Editor pdf](./img/bien9.PNG)
+- Pagina con herramientas para modificar archivos pdf.
+
+### Nota : 8
+
+- Buena eleccion de colores, con contraste.
+- Tiene simetria.
+- Los elementos estan bien agrupados, por tamaño y proximidad y siguen una dirección.
+
+## - Pagina 10:
+#### URL: [Calcular tiempo en ver series](https://tiii.me/?ref=discuvver)
+![Tiempo en series](./img/bien10.PNG)
+- Pagina que calcula el tiempo que se tarda en ver una o varias series.
+
+### Nota : 7
+
+- Disposicion simetrica.
+- Caligrafia clara con un color que contrasta con el fondo.
+- El fondo, que cambia segun la serie elegida, no resalta y percibe perfectamente la figura de la página.
