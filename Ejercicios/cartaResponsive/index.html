@@ -1,29 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Carta Top Trump</title>
-
-    <script type="text/javascript">
-
-        var carta = [];
-        carta["carta"] = {titulo: "", img: "", descripcion: "", caracteristicas: {magia: "", temperamento: "",sabiduria: "",astucia: "",coraje: ""}};
-
-        var x = document.getElementsByClassName("titulo");
-
-        console.log(x);
-        y = x.outerHTML;
-
-        console.log(y);
-
-
-        Object.keys(carta).forEach(key =>
-            console.log(key, carta[key])
-        );
-
-
-    </script>
 
     <style>
 
@@ -32,10 +11,13 @@
             font-family: "Noto Serif Georgian";
         }
         .carta {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
             width: 30%;
             margin-right: auto;
             margin-left: auto;
-            display: block;
             border-style: inset;
             border-width: 10px;
             border-color: darkgreen;
@@ -51,6 +33,8 @@
             border-style: inset;
             border-color: darkgreen;
             margin-bottom: 10px;
+            width: 100%;
+
         }
 
         .col {
@@ -67,7 +51,8 @@ img{
 ul {
     width: 50%;
     list-style-type: none;
-    padding-left: 20px;
+
+
 }
 .descripcion {
     width: 80%;
@@ -82,27 +67,24 @@ ul {
     border-radius: 25px;
     padding: 10px;
     color: #2a2929;
+
+}
+.caracteristicas {
+    margin-left: 0px;
 }
 
-@media (max-width: 576px) {
-    .descripcion {
-        display: none;
-    }
-    ul {
-        margin-top: -20px;
-    }
-}
+
 
 
     </style>
-
+// crear la carta con javascrpt
 
 
 </head>
 <body>
 
     <div class="carta">
-            <h1 id="titulo">
+            <h1 class="title">
                 Draco Malfoy
             </h1>
             <span class="col">
@@ -117,11 +99,11 @@ ul {
 
             <span class="caracteristicas col">
                 <ul>
-                    <li>Magia:...6</li>
-                    <li>Temperamento:...7</li>
-                    <li>Sabiduria:...4</li>
-                    <li>Astucia:...8</li>
-                    <li>Coraje:...8</li>
+                    <li class="magia">Magia:...6</li>
+                    <li class="temperamento">Temperamento:.7</li>
+                    <li class="sabiduria">Sabiduria:...4</li>
+                    <li class="astucia">Astucia:...8</li>
+                    <li class="coraje">Coraje:...8</li>
                 </ul>
 
             </span>
