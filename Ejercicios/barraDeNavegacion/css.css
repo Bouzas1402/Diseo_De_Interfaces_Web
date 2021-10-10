@@ -1,0 +1,49 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, san;
+}
+
+.barra {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-size: 17px;
+}
+
+ul {
+    list-style-type: none;
+    background-color:#aaa7a7;
+}
+
+.desplegable {
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lista_desplegada {
+    width: 155px;
+    padding: 0;
+    font-size: 14px;
+}
+
+.contenido_desplegable {
+    display: none;
+    position: absolute;
+}
+
+.desplegable:hover .contenido_desplegable {
+    display: block;
+}
+
+a:hover {
+    background-color: #555;
+    text-decoration: underline;
+    cursor: auto;
+}

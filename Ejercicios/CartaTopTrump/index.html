@@ -1,135 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+
     <title>Carta Top Trump</title>
+
+    <link rel="stylesheet" href="css.css">
 
     <script type="text/javascript">
 
         var carta = [];
-        carta["carta"] = {titulo: "", img: "", descripcion: "", caracteristicas: {magia: "", temperamento: "",sabiduria: "",astucia: "",coraje: ""}};
+        carta["titulo"] = "Draco Malfoy";
+        carta["img"] = "img/fondo.jpg";
+        carta["descripcion"] = "Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot. Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.";
+        carta["caracteristicas"] = [];
 
-        var x = document.getElementsByClassName("titulo");
-
-        console.log(x);
-        y = x.outerHTML;
-
-        console.log(y);
-
+        var caracteristicas = [];
+        caracteristicas["magia"] = 6;
+        caracteristicas["temperamento"] = 7;
+        caracteristicas["sabiduria"] = 4;
+        caracteristicas["astucia"] = 8;
+        caracteristicas["coraje"] = 8;
+        carta["caracteristicas"].push(caracteristicas);
 
         Object.keys(carta).forEach(key =>
-            console.log(key, carta[key])
-        );
-
+             console.log(key.toUpperCase(), ":", carta[key])
+             );
+        Object.keys(caracteristicas).forEach(key =>
+            console.log(key.toUpperCase(), ":", caracteristicas[key]));
 
     </script>
-
-    <style>
-
-        * {
-            color: azure;
-            font-family: "Noto Serif Georgian";
-        }
-        .carta {
-            width: 30%;
-            margin-right: auto;
-            margin-left: auto;
-            display: block;
-            border-style: inset;
-            border-width: 10px;
-            border-color: darkgreen;
-            border-radius: 10px;
-            background-image: url("img/fondo.jpg");
-            background-repeat: repeat;
-        }
-
-        h1{
-            text-align: center;
-            border-style: solid;
-            border-width: 5px 20px;
-            border-style: inset;
-            border-color: darkgreen;
-            margin-bottom: 10px;
-        }
-
-        .col {
-            margin-right: auto;
-            margin-left: auto;
-            }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-ul {
-    width: 50%;
-    list-style-type: none;
-    padding-left: 20px;
-}
-.descripcion {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("img/pergamino.jpg");
-    border-style: solid;
-    border-width: 5px;
-    border-style: solid;
-    border-color: burlywood;
-    border-radius: 25px;
-    padding: 10px;
-    color: #2a2929;
-}
-
-@media (max-width: 576px) {
-    .descripcion {
-        display: none;
-    }
-    ul {
-        margin-top: -20px;
-    }
-}
-
-
-    </style>
-
-
 
 </head>
 <body>
 
     <div class="carta">
-            <h1 id="titulo">
-                Draco Malfoy
-            </h1>
-            <span class="col">
-                <img src="img/draco.jpg"/>
-            </span><br>
+        <h1 id="titulo">
+            Draco Malfoy
+        </h1>
+
+        <img src="img/draco.jpg"/>
 
         <span class="descripcion">
             Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot.
             Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.
-            </span>
+        </span>
 
-
-            <span class="caracteristicas col">
-                <ul>
-                    <li>Magia:...6</li>
-                    <li>Temperamento:...7</li>
-                    <li>Sabiduria:...4</li>
-                    <li>Astucia:...8</li>
-                    <li>Coraje:...8</li>
-                </ul>
-
-            </span>
-
+        <span class="caracteristicas">
+            <ul>
+                <li>Magia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="magia">6</span></li>
+                <li>Temperamento:&nbsp&nbsp<span id="temperamento">7</span></li>
+                <li>Sabiduria:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="sabiduria">4</span></li>
+                <li>Astucia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="astucia">8</span></li>
+                <li>Coraje:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="coraje">8</span></li>
+            </ul>
+        </span>
 
     </div>
-
-
 
 </body>
 </html>

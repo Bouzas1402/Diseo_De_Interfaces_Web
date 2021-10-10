@@ -1,0 +1,29 @@
+.carta {
+    width: 40%;
+}
+
+.col {
+    width: 45%;
+}
+
+img {
+    width: 80%;
+    margin-bottom: 5px;
+    margin-right: initial;
+}
+
+li {
+        font-size: medium;
+        padding-top: 0px;
+}
+
+ul {
+    position: absolute;
+    right: 30px;
+    top: 110px;
+
+}
+
+.descripcion_grande {
+    display: none;
+}

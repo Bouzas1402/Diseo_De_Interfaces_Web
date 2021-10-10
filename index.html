@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Carta Top Trump</title>
+
+    <style>
+
+        .carta {
+            display: flex;
+            flex-flow: row wrap;
+            width: 30%;
+            margin-right: auto;
+            margin-left: auto;
+            border-style: inset;
+            border-width: 10px;
+            border-color: darkgreen;
+            border-radius: 10px;
+            background-image: url("img/fondo.jpg");
+        }
+
+        h1{
+            text-align: center;
+            color: azure;
+            border-style: solid;
+            border-width: 5px 20px;
+            border-style: inset;
+            border-color: darkgreen;
+            margin-bottom: 10px;
+            width: 100%;
+
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        ul {
+            width: 50%;
+            list-style-type: none;
+        }
+
+        li {
+            color: #fd7e14;
+            font-size: large;
+            border-left-style: solid;
+            border-color: #0a53be;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+
+        li > span {
+            color: #ffc107;
+        }
+
+        .descripcion {
+            background-image: url("img/pergamino.jpg");
+            padding: 10px;
+        }
+
+
+        @media (max-width: 960px) {
+
+            .carta {
+                width: 40%;
+            }
+
+            .col {
+                width: 45%;
+            }
+
+            img {
+                width: 80%;
+                margin-bottom: 5px;
+                margin-right: initial;
+            }
+
+            li {
+                font-size: medium;
+                padding-top: 0px;
+            }
+
+            ul {
+                position: absolute;
+                right: 30px;
+                top: 110px;
+
+            }
+
+            .descripcion_grande {
+                display: none;
+            }
+        }
+
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <div class="carta">
+            <h1 class="title">
+                Draco Malfoy
+            </h1>
+            <span class="col">
+                <img src="img/draco.jpg"/>
+            </span>
+
+        <span class="descripcion">
+            <span class="descripcion_grande">Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot.</span>
+            <span class="descripcion_pequeña">Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.</span>
+            </span>
+
+
+
+                <ul class="caracteristicas col">
+                    <li>Magia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="magia">6</span></li>
+                    <li>Temperamento:&nbsp&nbsp<span id="temperamento">7</span></li>
+                    <li>Sabiduria:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="sabiduria">4</span></li>
+                    <li>Astucia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="astucia">8</span></li>
+                    <li>Coraje:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="coraje">8</span></li>
+                </ul>
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,117 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Carta Top Trump</title>
-
-    <style>
-
-        * {
-            color: azure;
-            font-family: "Noto Serif Georgian";
-        }
-        .carta {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-            width: 30%;
-            margin-right: auto;
-            margin-left: auto;
-            border-style: inset;
-            border-width: 10px;
-            border-color: darkgreen;
-            border-radius: 10px;
-            background-image: url("img/fondo.jpg");
-            background-repeat: repeat;
-        }
-
-        h1{
-            text-align: center;
-            border-style: solid;
-            border-width: 5px 20px;
-            border-style: inset;
-            border-color: darkgreen;
-            margin-bottom: 10px;
-            width: 100%;
-
-        }
-
-        .col {
-            margin-right: auto;
-            margin-left: auto;
-            }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-ul {
-    width: 50%;
-    list-style-type: none;
-
-
-}
-.descripcion {
-    width: 80%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("img/pergamino.jpg");
-    border-style: solid;
-    border-width: 5px;
-    border-style: solid;
-    border-color: burlywood;
-    border-radius: 25px;
-    padding: 10px;
-    color: #2a2929;
-
-}
-.caracteristicas {
-    margin-left: 0px;
-}
-
-
-
-
-    </style>
-// crear la carta con javascrpt
-
+    <link rel="stylesheet" href="pantallaGrande.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="pantallaPequeña.css">
 
 </head>
 <body>
 
     <div class="carta">
-            <h1 class="title">
-                Draco Malfoy
-            </h1>
-            <span class="col">
+
+        <h1 class="title">Draco Malfoy</h1>
+
+        <span class="col">
                 <img src="img/draco.jpg"/>
-            </span><br>
+        </span>
 
         <span class="descripcion">
-            Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot.
-            Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.
-            </span>
+            <span class="descripcion_grande">Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot.</span>
+            <span class="descripcion_pequeña">Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.</span>
+        </span>
 
-
-            <span class="caracteristicas col">
-                <ul>
-                    <li class="magia">Magia:...6</li>
-                    <li class="temperamento">Temperamento:.7</li>
-                    <li class="sabiduria">Sabiduria:...4</li>
-                    <li class="astucia">Astucia:...8</li>
-                    <li class="coraje">Coraje:...8</li>
-                </ul>
-
-            </span>
-
+        <ul class="caracteristicas col">
+            <li>Magia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="magia">6</span></li>
+            <li>Temperamento:&nbsp&nbsp<span id="temperamento">7</span></li>
+            <li>Sabiduria:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="sabiduria">4</span></li>
+            <li>Astucia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="astucia">8</span></li>
+            <li>Coraje:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="coraje">8</span></li>
+        </ul>
 
     </div>
-
-
 
 </body>
 </html>
