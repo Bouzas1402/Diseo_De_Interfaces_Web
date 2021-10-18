@@ -2,7 +2,7 @@
     color: azure;
     font-family: "Noto Serif Georgian";
 }
-.carta {
+#carta {
     width: 400px;
     margin-right: auto;
     margin-left: auto;
@@ -47,7 +47,7 @@ ul {
     list-style-type: none;
 }
 
-.descripcion {
+#descripcion {
     width: 80%;
     display: block;
     margin-left: auto;

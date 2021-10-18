@@ -2,16 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <title>Carta Top Trump</title>
-
     <link rel="stylesheet" href="css.css">
-
     <script type="text/javascript">
-
         var carta = [];
         carta["titulo"] = "Draco Malfoy";
-        carta["img"] = "img/fondo.jpg";
+        carta["img"] = "img/draco.jpg";
         carta["descripcion"] = "Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot. Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.";
         carta["caracteristicas"] = [];
 
@@ -23,40 +19,39 @@
         caracteristicas["coraje"] = 8;
         carta["caracteristicas"].push(caracteristicas);
 
-        Object.keys(carta).forEach(key =>
-             console.log(key.toUpperCase(), ":", carta[key])
-             );
-        Object.keys(caracteristicas).forEach(key =>
-            console.log(key.toUpperCase(), ":", caracteristicas[key]));
-
+        document.addEventListener("DOMContentLoaded", function(event){
+            Object.keys(carta).forEach(key => {
+                if (key == "img"){
+                    document.getElementById(key).src = carta[key]
+                } else {
+                    document.getElementById(key).innerHTML += carta[key]
+                }
+            });
+            console.log(carta["caracteristicas"][0]);
+            Object.keys(carta["caracteristicas"][0]).forEach(key => {
+                console.log(key)
+                console.log(carta["caracteristicas"][0][key])
+                document.getElementById(key).innerHTML = carta["caracteristicas"][0][key]
+            });
+        });
     </script>
-
 </head>
 <body>
-
-    <div class="carta">
+    <div id="carta">
         <h1 id="titulo">
-            Draco Malfoy
         </h1>
-
-        <img src="img/draco.jpg"/>
-
-        <span class="descripcion">
-            Draco Malfoy es hijo de Lucius Malfoy y Narcissa Malfoy seguidores de Voldermot.
-            Listo, habilidoso y muy impetuoso. El mayor rival de Harry en Howarts.
+        <img id="img" src="img/draco.jpg"/>
+        <span id="descripcion">
         </span>
-
-        <span class="caracteristicas">
+        <span id="caracteristicas">
             <ul>
-                <li>Magia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="magia">6</span></li>
-                <li>Temperamento:&nbsp&nbsp<span id="temperamento">7</span></li>
-                <li>Sabiduria:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="sabiduria">4</span></li>
-                <li>Astucia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="astucia">8</span></li>
-                <li>Coraje:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="coraje">8</span></li>
+                <li>Magia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="magia"></span></li>
+                <li>Temperamento:&nbsp&nbsp<span id="temperamento"></span></li>
+                <li>Sabiduria:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="sabiduria"></span></li>
+                <li>Astucia:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="astucia"></span></li>
+                <li>Coraje:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="coraje"></span></li>
             </ul>
         </span>
-
     </div>
-
 </body>
 </html>
