@@ -27,11 +27,8 @@
                     document.getElementById(key).innerHTML += carta[key]
                 }
             });
-            console.log(carta["caracteristicas"][0]);
-            Object.keys(carta["caracteristicas"][0]).forEach(key => {
-                console.log(key)
-                console.log(carta["caracteristicas"][0][key])
-                document.getElementById(key).innerHTML = carta["caracteristicas"][0][key]
+        Object.keys(carta["caracteristicas"][0]).forEach(key => {
+            document.getElementById(key).innerHTML = carta["caracteristicas"][0][key]
             });
         });
     </script>
