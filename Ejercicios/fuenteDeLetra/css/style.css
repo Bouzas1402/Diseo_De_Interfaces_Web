@@ -1,7 +1,7 @@
 /* latin */
 @font-face {
     font-family: 'Dancing Script';
-    font-style: normal;
+    font-style: auto;
     font-weight: 400;
     font-display: swap;
     src: url(../font/DancingScript.ttf) format('truetype');
