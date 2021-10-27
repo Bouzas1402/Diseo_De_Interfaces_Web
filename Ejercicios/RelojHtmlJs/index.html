@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RELOJ</title>
+
+    <style>
+        #Canvas {
+            display: block;
+            margin: auto;
+            background-color:darkslategrey;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+
+            window.onload = function (){
+                window.requestAnimationFrame(draw_HMS)
+            }
+
+
+
+
+        function  draw_arc () {
+            var pi = Math.PI;
+            var Tools =  document.getElementById("Canvas").getContext("2d");
+
+            Tools.save()
+            Tools.translate(250,250)
+            Tools.beginPath()
+            Tools.arc(0,0,155,0, pi*2,true)
+            Tools.lineWidth = 5
+            Tools.strokeStyle = "bisque"
+            Tools.closePath()
+            Tools.stroke()
+            Tools.restore()
+
+
+            Tools.save()
+            Tools.translate(250,250)
+            Tools.beginPath()
+            Tools.arc(0,0,5,0,pi*2,true)
+            Tools.fill()
+            Tools.closePath()
+            Tools.restore()
+
+            var i;
+            for (i = 1; i <= 60 ; i++) {
+
+                Tools.save()
+                Tools.translate(250,250)
+                Tools.rotate(-pi/2+(pi/180)*(360/60)*i)
+                Tools.beginPath()
+
+                if(i % 5 === 0){
+                    Tools.moveTo(114,0)
+                    Tools.strokeStyle = "crimson"
+                    Tools.lineWidth = 5
+                } else {
+                    Tools.moveTo(120,0)
+                    Tools.strokeStyle = "aqua"
+                    Tools.lineWidth = 3
+                }
+                Tools.lineTo(150,0)
+                Tools.closePath()
+                Tools.stroke()
+                Tools.restore()
+            }
+        }
+
+
+        function draw_HMS (){
+
+            window.setTimeout(function (){
+                window.requestAnimationFrame(draw_HMS)
+            },100/5);
+            clear();
+            draw_arc();
+            var pi = Math.PI
+            var dat = new Date()
+                var horas = dat.getHours()
+                var minutos = dat.getMinutes()
+                var segundos = dat.getSeconds()
+
+            var segundos_angle = pi /180 * (360/60) * segundos
+            var minutos_angle = pi /180 * (360/60) * minutos + segundos_angle/60
+            var horas_angle = pi /180 * (360/12) * horas + minutos_angle/12
+
+            var segundos_length = 108
+            var minutos_length = 90
+            var horas_length = 62
+
+            var segundos_width = 2
+            var minutos_width = 3
+            var horas_width = 4
+
+            var segundos_color = "red"
+            var minutos_color = "green"
+            var horas_color = "darkred"
+
+            var segundos_size = 25
+            var minutos_size = 15
+            var horas_size = 10
+
+            draw_h_m_s(segundos_angle,segundos_length,segundos_width,segundos_color,segundos_size,pi)
+            draw_h_m_s(minutos_angle,minutos_length,minutos_width,minutos_color,minutos_size,pi)
+            draw_h_m_s(horas_angle,horas_length,horas_width,horas_color,horas_size,pi)
+        }
+
+
+        function draw_h_m_s (angulo, longitud, ancho, color, tamano, pi){
+            var Tools = document.getElementById("Canvas").getContext("2d")
+            Tools.save()
+            Tools.translate(250,250)
+            Tools.rotate(-pi / 2 + angulo)
+            Tools.lineWidth = ancho
+            Tools.beginPath()
+            Tools.moveTo(-tamano, 0)
+            Tools.lineTo(longitud, 0)
+            Tools.strokeStyle = color
+            Tools.stroke()
+            Tools.closePath()
+            Tools.restore()
+        }
+
+        function clear (){
+            var Tools = document.getElementById("Canvas")
+            console.log("2")
+            var ss = Tools.getContext("2d")
+            ss.clearRect(0,0,500,500)
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    <canvas id="Canvas" width="500" height="500"></canvas>
+
+</body>
+</html>
