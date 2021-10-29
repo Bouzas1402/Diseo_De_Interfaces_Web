@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Reloj puntero simple</title>
-   <!-- <link href="style.css" rel="stylesheet">
-    <link href="main.js" rel="stylesheet"> -->
-    <style>
+    <style id="css">
         #box {
             width: 200px;
             height: 200px;
@@ -13,6 +11,7 @@
             border-radius: 50%;
             margin: 50px auto;
             position: relative;
+            background-color: #3dd5f3;
         }
 
         #lista {
@@ -33,11 +32,11 @@
             transform-origin: center 100px;
         }
 
-        #list li:nth-of-type(5n + 1) {
+        #lista li:nth-of-type(5n + 1) {
             width: 2px;
             height: 10px;
-        }
 
+        }
 
         #ico,#hor,#min,#seg {
             position: absolute;
@@ -62,14 +61,16 @@
             top: 49px;
             transform-origin: bottom;
         }
+
         #min {
             height: 60px;
             width: 3px;
             background: blue;
-            top: 99px;
-            left: 39px;
+            top: 39px;
+            left: 99px;
             transform-origin: bottom;
         }
+
         #seg {
             height: 80px;
             width: 1px;
@@ -78,6 +79,7 @@
             left: 100px;
             transform-origin: bottom;
         }
+
     </style>
 
     <script type="text/javascript">
@@ -87,13 +89,13 @@
             let hor = document.getElementById("hor");
             let min = document.getElementById("min");
             let seg = document.getElementById("seg");
-            let ico = document.getElementById("ico");
             let css = document.getElementById("css");
+
 
             let lis = '';
             for (let i = 0; i < 60; i++){
                 lis += '<li></li>';
-                css.innerHTML += "#list li:nth-of-type("+(i+1)+"){transform:rotate("+ (i*6) +"deg)};"
+                css.innerHTML += "#lista li:nth-of-type("+(i+1)+"){transform: rotate("+ (i*6) +"deg);}"
             }
 
             lista.innerHTML = lis;
