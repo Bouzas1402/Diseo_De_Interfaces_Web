@@ -19,9 +19,9 @@
         caracteristicas["coraje"] = 8;
         carta["caracteristicas"].push(caracteristicas);
 
-        document.addEventListener("DOMContentLoaded", function(event){
+        document.addEventListener("DOMContentLoaded", function(){
             Object.keys(carta).forEach(key => {
-                if (key == "img"){
+                if (key === "img"){
                     document.getElementById(key).src = carta[key]
                 } else {
                     document.getElementById(key).innerHTML += carta[key]
