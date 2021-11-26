@@ -1,0 +1,48 @@
+/*!
+ * @project        Fiizy OÜ
+ * @name           solcredito.cc042d4d50c989423c57.css
+ * @author         Fiizy OÜ
+ * @build          Fri Nov 12 2021 06:09:21 GMT+0000 (Coordinated Universal Time)
+ * @copyright      Copyright (c) 2021 Fiizy OÜ
+ *
+ */:root{
+    --fi-primary:#ffa800;
+    --fi-primary-300:#ffd076;
+    --fi-secondary:#000;
+    --fi-secondary-900:#fff;
+    --fi-secondary-700:#e3e8e9;
+    --fi-secondary-600:#a5a5a5;
+    --fi-secondary-500:#c4ccd9;
+    --fi-secondary-400:#8c8c8c;
+    --fi-secondary-200:#80828e;
+    --fi-secondary-100:#535567;
+    --fi-error:#ec5249;
+    --fi-button-width:335px;
+    --fi-button-margin:10px;
+    --fi-button-shadow:0 5px 5px 0 rgba(0,0,0,0.2),
+    inset 0 -2px 0 0 #dd9200;
+    --fi-button-shadow-disabled:0 5px 5px 0 rgba(0,0,0,0.2),
+    inset 0 -2px 0 0 #e3b865;
+    --fi-button-color:#fff;
+    --fi-disabled-background:#ffd076;
+    --fi-process-background:#fbfbf9;
+    --fi-process-step-background:linear-gradient(180deg,#72c6f7 -97%,#fbfbf9 89%,#fbfbf9 0);
+    --fi-disabled-text:#f5f2ed;
+    --fi-green:#00c316;
+    --fi-light-green:#caed9e;
+    --fi-select-border:#1a84c5
+}
+@media only screen and (max-width:576px){
+    :root{
+        --fi-button-width:100%
+    }
+}
+.html-bg-0{
+    background-image:url(https://cdn.finzmo.com/images/backgrounds/1.jpg)
+}
+@media only screen and (min-width:768px){
+    .html-bg-0{
+        background-image:url(https://cdn.finzmo.com/images/backgrounds/3-3840x751.jpg)
+    }
+}
+/*# sourceMappingURL=solcredito.cc042d4d50c989423c57.css.map*/
