@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="jquery/jquery.dataTables.min.css" />
+
+    <script>
+        function verProductos() {
+            var datatableProducts = document.getElementById("productos-datatable");
+            for (var i = 0; i < productos.length; i++){
+                var rowDataTable = "<tr><td><img class='img-thumbnail w-25'  src='img/";
+                if (productos[i].imagen === undefined) {
+                    rowDataTable += "default.jpg'";
+                } else {
+                    rowDataTable += productos[i].imagen + "'";
+                }
+                    rowDataTable += "></td><td>" + productos[i].name + "</td><td>" + productos[i].precio + "</td></tr>";
+                datatableProducts.innerHTML += rowDataTable;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log();
+            verProductos();
+                $('#productos-datatable').DataTable();
+
+        });
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <main>
+            <table class="table" id="productos-datatable">
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="jquery/jquery.dataTables.min.js"></script>
+<script src="js/productos.js"></script>
+</body>
+</html>

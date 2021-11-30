@@ -1,0 +1,7 @@
+Inventario de productos:
+
+- productos.js (nombre, precio, imagen(opcional)).
+- mostrar prodructos a datatable (boostrap).
+- Añadir un input a cada producto un campo numerico.
+- Usar img por defecto para los productos sin imagen.
+
