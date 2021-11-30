@@ -22,46 +22,51 @@
 
 
         <div class="container vh-100 mw-100 landing-page">
-            <h2 class="portfolio-modal-title text-uppercase mb-0">LANDing page</h2>
-            <div class="row">
-                <div class="col-8 pt-2">
-                <span class="dropdown-divider"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
-                        <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
-                    </svg>
-                <span class="dropdown-divider "></span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-8 bg-danger ">
+            <h2 class="portfolio-modal-title text-uppercase text-center m">LANDing page</h2>
 
-                    <form class="landing-form" action="index.html" method="get">
-                        <div class="col-8 pt-2">
+            <div class="row">
+                <div class="col-8">
+                <div class="col-8 bg-danger m-auto">
+
+                    <form class="landing-form m-auto" action="index.html" method="get">
+                        <div class="col-8 pt-2 ms-5">
                             <input class="form-control" type="text" name="nombre" placeholder="Tu nombre" required>
                             <div class="invalid-feedback">Nombre no valido</div>
                         </div>
-                        <div class="col-8 pt-2">
+                        <div class="col-8 pt-2 ms-5">
                             <input class="form-control" type="text" name="apellidos" placeholder="Tus apellidos" required>
                             <div class="invalid-feedback">Apellidos no validos</div>
                         </div>
-                        <div class="col-8 pt-2">
+                        <div class="col-8 pt-2 ms-5">
                         <input class="form-control" type="tel" name="telefono" placeholder="Tu telefono" required>
                         <div class="invalid-feedback">Telefono no valido</div>
                         </div>
-                        <div class="col-8 pt-2">
+                        <div class="col-8 pt-2 ms-5">
                             <input class="form-control" type="email" name="email" placeholder="Tu email" required>
                             <div class="invalid-feedback">Emails no validos</div>
                         </div>
-                        <div class="form-label">Quiero recibir informacion sobre descuentos, promociones u otras acciones promocionales de la pagina.
-                            <input class="form-check" type="checkbox" name="aceptar">
+                        <div class="form-floating  ms-5">
+                        <input class="form-check" type="checkbox" name="aceptar">
+                        <span class="form-label">Quiero recibir informacion sobre descuentos, promociones u otras acciones promocionales de la pagina.
+                        </span>
                         </div>
+                        <div class="form-floating  ms-5">
+                        <input class="form-check " type="checkbox" name="aceptar-terceros">
                         <div class="form-label">Acepto Quiero recibir informacion sobre descuentos, promociones u otras acciones promocionales de terceros asociados a la pagina.
-                            <input class="form-check" type="checkbox" name="aceptar-terceros">
+                        </div>
                         </div>
 
                     </form>
+
                     <a href="#">Volver al principio</a>
                 </div>
+                <div class="col-2 m-auto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-send-check-fill" viewBox="0 0 16 16">
+                        <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 1.59 2.498C8 14 8 13 8 12.5a4.5 4.5 0 0 1 5.026-4.47L15.964.686Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                        <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                    </svg>
+                </div>
+            </div>
             </div>
         </div>
 
