@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/style.css" rel="stylesheet" />
+
+	<script type="text/javascript">
+		function mostrarConversacion(id){
+			var items = document.getElementsByName('conversation');
+			for (var i = 0; i < items.length; i++) {
+				items[i].classList.add('hidden'); <!-- hay que crear esta clase -->
+			}
+
+			document.getElementById('conversation-'+id).classList.remove('hidden');
+		}
+
+		var myVar;
+
+		function myFunction() {
+		  myVar = setTimeout(showPage, 2000);
+		}
+
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("content").style.display = "block";
+		}
+	</script>
+</head>
+<body onload="myFunction()" >
+
+
+	<div class="loader" id="loader"></div>
+	<div class="content">
+		<div class="column contacts">
+			<div class="contact" id="contact-1"  onmouseover="mostrarConversacion('contact-1')">
+				<img src="img/profile.png" class="profile-photo"/>
+				<h3>Pilar Sanchez</h3>
+				<p>descripcion</p>
+			</div>
+
+			<div class="contact" id="contact-2" onmouseover="mostrarConversacion('contact-2')">
+				<img src="img/profile.png" class="profile-photo"/>
+				<h3>Gustavo Lopez</h3>
+				<p>descripcion</p>
+			</div>
+
+
+			<div class="contact" id="contact-3" onmouseover="mostrarConversacion('contact-3')">
+				<img src="img/profile.png" class="profile-photo"/>
+				<h3>Jesus Perez</h3>
+				<p>descripcion</p>
+			</div>
+		</div>
+		<div class="column conversations">
+			<div class="conversation hidden" id="conversation-contact-1" name="conversation">
+					hola soy pilar
+			</div>
+
+			<div class="conversation hidden" id="conversation-contact-2" name="conversation">
+				hola soy gustavo
+			</div>
+
+			<div class="conversation hidden" id="conversation-contact-3" name="conversation">
+				hola soy jesus
+			</div>
+		</div>
+		
+	</div>
+
+	<!--
+
+		https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5
+
+	-->
+
+</body>
+</html>
