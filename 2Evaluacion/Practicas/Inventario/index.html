@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>Productos</title>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="jquery/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/b-2.0.1/date-1.1.1/r-2.2.9/sc-2.0.5/sl-1.3.3/datatables.min.css"/>
+
+    <!-- <link href="jquery/jquery.dataTables.min.css" /> -->
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
 
     <script>
-        function verProductos() {
+       /* function verProductos() {
             var datatableProducts = document.getElementById("productos-datatable");
             for (var i = 0; i < productos.length; i++){
                 var rowDataTable = "<tr><td><img class='img-thumbnail w-25'  src='img/";
@@ -19,12 +25,25 @@
                     rowDataTable += "></td><td>" + productos[i].name + "</td><td>" + productos[i].precio + "</td></tr>";
                 datatableProducts.innerHTML += rowDataTable;
             }
-        }
+        } */
 
         document.addEventListener("DOMContentLoaded", function () {
             console.log();
-            verProductos();
-                $('#productos-datatable').DataTable();
+
+            var table = $('#productos-datatable').DataTable({
+                data: productos,
+                columns: [{data: 'imagen'},{data: 'name'},{data: 'precio'}],
+                columnDefs: [{
+                    targets: -1,
+                    className: 'hover'
+                }]
+            }
+            );
+
+
+
+
+
 
         });
 
@@ -37,7 +56,7 @@
 
     <div class="container">
         <main>
-            <table class="table" id="productos-datatable">
+            <table class="table table-striped" id="productos-datatable">
                 <thead>
                     <tr>
                         <th>Imagen</th>
@@ -45,16 +64,14 @@
                         <th>Precio</th>
                     </tr>
                 </thead>
-                <tbody>
 
-                </tbody>
             </table>
         </main>
     </div>
 
 
-<script src="../assets/js/bootstrap.bundle.min.js"></script>
-<script src="jquery/jquery.dataTables.min.js"></script>
 <script src="js/productos.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+
 </body>
 </html>
